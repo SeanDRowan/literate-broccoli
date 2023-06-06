@@ -1,6 +1,7 @@
 :Root {
 --blue: #6899ca; 
 --green: green;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .header{
@@ -8,9 +9,15 @@
     border: 15px solid green;
     padding: 50px;
     margin: 20px;
+    
 background-color: var(--blue);
 }
-.portfolio{
+.nav a{
+    margin-right:50px;
+    color: azure;
+    text-decoration: none;
+}
+.portfolio{ 
     border: 15px solid var(--green);
     padding: 50px;
     margin: 20px;      
@@ -22,6 +29,13 @@ background-color: var(--blue);
     border: solid ;
     max-width: 300px;
     margin: 20px
+}
+.card:first-child{
+    border: solid ;
+    max-width: 300px;
+    margin: 20px;
+    padding: 30px;
+    border-color: aqua;
 }
 .about-me{
    
