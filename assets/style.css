@@ -1,22 +1,28 @@
 :Root {
---blue: #6899ca; 
+    background-image: linear-gradient(to top,white,grey);
+--blue: #566ffc; 
 --green: green;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+--bgc: 
 }
 
 .header{
-   
     border: 15px solid green;
     padding: 50px;
     margin: 20px;
-    
 background-color: var(--blue);
 }
-.nav a{
-    margin-right:50px;
-    color: azure;
+.header a{
     text-decoration: none;
+    color:azure;
 }
+.header li{
+    color: azure;
+    list-style-type: none;
+    display: inline;
+    margin-left: 30px;
+}
+
 .portfolio{ 
     border: 15px solid var(--green);
     padding: 50px;
@@ -24,41 +30,53 @@ background-color: var(--blue);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: var(--blue);
 }
 .card{
+    color: aliceblue;
     border: solid ;
     max-width: 300px;
-    margin: 20px
+    margin: 10%;
+    box-shadow: 13px 14px 5px 0px rgba(0,0,0,0.78);
+    background-image:url(https://ak3.picdn.net/shutterstock/videos/3191083/thumb/1.jpg);
 }
+
 .card:first-child{
-    border: solid ;
-    max-width: 300px;
-    margin: 20px;
-    padding: 30px;
+    padding:10%;
     border-color: aqua;
+    margin:10px;
+}
+.card:hover{
+    border-color: blueviolet;
+    border-width: 10px;
+    box-shadow: 28px 24px 5px 0px rgba(0,0,0,0.56);
+    background-color: rgb(192, 179, 204);
 }
 .about-me{
-   
+    background-color: var(--blue);
     border: 15px solid var(--green);
     padding: 50px;
     margin: 20px;
+    position: relative;
 }
 
 .about-me p{
-    margin-left: 300px;
-
+position: absolute;
+left: 300px;
+top:50px;
 }
 
 .footer{
-    
+    background-color: var(--blue);
     border: 15px solid var(--green);
     padding: 50px;
     margin: 20px;
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        background-color: lightgreen;
+    .header li{
+    display: block;
+    margin-bottom: 20px;
     }
   }
   @media screen and (max-width: 576px) {
