@@ -1,16 +1,17 @@
 :Root {
-    background-image: linear-gradient(to top,white,grey);
---blue: #566ffc; 
---green: green;
+    background-image: linear-gradient(to top,white,black);
+--blue: #7281d8; 
+--green: rgb(61, 173, 61);
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 --bgc: 
 }
 
 .header{
-    border: 15px solid green;
+    border: 15px solid var(--green);
     padding: 50px;
     margin: 20px;
 background-color: var(--blue);
+border-radius: 20px;
 }
 .header a{
     text-decoration: none;
@@ -24,30 +25,39 @@ background-color: var(--blue);
 }
 
 .portfolio{ 
-    border: 15px solid var(--green);
     padding: 50px;
     margin: 20px;      
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--blue);
 }
 .card{
+    border-radius: 10px;
     color: aliceblue;
     border: solid ;
     max-width: 300px;
     margin: 10%;
     box-shadow: 13px 14px 5px 0px rgba(0,0,0,0.78);
-    background-image:url(https://ak3.picdn.net/shutterstock/videos/3191083/thumb/1.jpg);
+    background-image:url();
 }
 
+h2 {
+    margin-top: -30px;
+    border:solid;
+    background-image: linear-gradient(to right,rgb(64, 209, 64),black);
+    border-radius: 10px;
+}
+.card-body{
+    padding:30px;
+}
 .card:first-child{
     padding:10%;
     border-color: aqua;
-    margin:10px;
+    margin-inline:25%;
+    padding-top: 0px;
 }
 .card:hover{
-    border-color: blueviolet;
+    border-color:grey;
     border-width: 10px;
     box-shadow: 28px 24px 5px 0px rgba(0,0,0,0.56);
     background-color: rgb(192, 179, 204);
@@ -58,11 +68,22 @@ background-color: var(--blue);
     padding: 50px;
     margin: 20px;
     position: relative;
+    border-radius: 20px;
+    color: azure;
 }
-
+h1{
+    position:absolute;
+    bottom: 0px;
+    left:180px;
+}
+.about-me img{
+    border: solid;
+    border-width: 10px;
+    border-radius: 100%;
+}
 .about-me p{
 position: absolute;
-left: 300px;
+left: 520px;
 top:50px;
 }
 
@@ -71,8 +92,14 @@ top:50px;
     border: 15px solid var(--green);
     padding: 50px;
     margin: 20px;
+    color:azure;
+    border-radius: 20px;
 }
-
+.footer a{
+    margin-right: 20px;
+    color:azure;
+   text-decoration: none;
+}
 @media screen and (max-width: 768px) {
     .header li{
     display: block;
