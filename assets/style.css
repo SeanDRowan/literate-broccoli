@@ -70,6 +70,7 @@ h2 {
     position: relative;
     border-radius: 20px;
     color: azure;
+    max-width: 1000px;
 }
 h1{
     position:absolute;
