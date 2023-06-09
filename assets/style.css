@@ -33,14 +33,20 @@ border-radius: 20px;
 }
 .card{
     border-radius: 10px;
-    color: aliceblue;
     border: solid ;
     max-width: 300px;
     margin: 10%;
     box-shadow: 13px 14px 5px 0px rgba(0,0,0,0.78);
     background-image:url();
 }
-
+.card a{
+    color: azure;
+    text-decoration: none;
+    background-color: blueviolet;
+    padding: 30px;
+    display: flex;
+    border-radius: 10px;
+}
 h2 {
     margin-top: -30px;
     border:solid;
@@ -96,8 +102,11 @@ top:50px;
     color:azure;
     border-radius: 20px;
 }
+.footer li{
+    list-style-type:none;
+    margin-bottom: 20px;
+}
 .footer a{
-    margin-right: 20px;
     color:azure;
    text-decoration: none;
 }
@@ -106,9 +115,14 @@ top:50px;
     display: block;
     margin-bottom: 20px;
     }
+    .about-me p{
+        position:static;
+        max-width: 160px;
+    }
   }
   @media screen and (max-width: 576px) {
     body {
+        background-image: linear-gradient(to top,rgb(190, 30, 156),black);
       background-color: rgb(190, 30, 156);
     }
     .about-me img{
@@ -116,8 +130,8 @@ top:50px;
         max-width: 120px;
     
     }
-    .about-me p{
-        position:static;
-        max-width: 160px;
+
+    h1{
+        position: static;
     }
   }
