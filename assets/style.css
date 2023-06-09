@@ -1,11 +1,11 @@
+/* styling for entire webpage + varialbes*/
 :Root {
     background-image: linear-gradient(to top,white,black);
 --blue: #7281d8; 
 --green: rgb(61, 173, 61);
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
---bgc: 
 }
-
+/*styling for header section including list items and link text*/
 .header{
     border: 15px solid var(--green);
     padding: 50px;
@@ -23,7 +23,33 @@ border-radius: 20px;
     display: inline;
     margin-left: 30px;
 }
-
+/* about me section including profile image, h1, and biography paragraph*/
+.about-me{
+    margin:20px;
+    background-color: var(--blue);
+    border: 15px solid var(--green);
+    padding: 50px;
+    position:relative;
+    border-radius: 20px;
+    color: azure;
+    max-width: 1000px;
+}
+h1{
+    position:absolute;
+    bottom: 0px;
+    left:180px;
+}
+.about-me img{
+    border: solid;
+    border-width: 10px;
+    border-radius: 100%;
+}
+.about-me p{
+position: absolute;
+left: 520px;
+top:50px;
+}
+/* section to contain project cards*/
 .portfolio{ 
     padding: 50px;
     margin: 20px;      
@@ -31,6 +57,7 @@ border-radius: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
+/* project cards including h2 for headers and links to other deployed projects*/
 .card{
     border-radius: 10px;
     border: solid ;
@@ -56,44 +83,21 @@ h2 {
 .card-body{
     padding:30px;
 }
+/* unique styling for first child of cards class*/
 .card:first-child{
     padding:10%;
     border-color: aqua;
     margin-inline:25%;
     padding-top: 0px;
 }
+/* project cards pop out when mouse hovers other them */
 .card:hover{
     border-color:grey;
     border-width: 10px;
     box-shadow: 28px 24px 5px 0px rgba(0,0,0,0.56);
     background-color: rgb(192, 179, 204);
 }
-.about-me{
-    background-color: var(--blue);
-    border: 15px solid var(--green);
-    padding: 50px;
-    margin: 20px;
-    position: relative;
-    border-radius: 20px;
-    color: azure;
-    max-width: 1000px;
-}
-h1{
-    position:absolute;
-    bottom: 0px;
-    left:180px;
-}
-.about-me img{
-    border: solid;
-    border-width: 10px;
-    border-radius: 100%;
-}
-.about-me p{
-position: absolute;
-left: 520px;
-top:50px;
-}
-
+/* styling for footer including list items and link text */
 .footer{
     background-color: var(--blue);
     border: 15px solid var(--green);
@@ -110,6 +114,7 @@ top:50px;
     color:azure;
    text-decoration: none;
 }
+/* styling changes responsive to screens smaller than 768px*/
 @media screen and (max-width: 768px) {
     .header li{
     display: block;
@@ -120,6 +125,7 @@ top:50px;
         max-width: 160px;
     }
   }
+  /* styling changes responsive to screens smaller than 576px*/
   @media screen and (max-width: 576px) {
     body {
         background-image: linear-gradient(to top,rgb(190, 30, 156),black);
@@ -128,9 +134,7 @@ top:50px;
     .about-me img{
         max-height: 120px;
         max-width: 120px;
-    
     }
-
     h1{
         position: static;
     }
