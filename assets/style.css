@@ -23,32 +23,40 @@ border-radius: 20px;
     display: inline;
     margin-left: 30px;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
 /* about me section including profile image, h1, and biography paragraph*/
 .about-me{
-    margin:20px;
     background-color: var(--blue);
     border: 15px solid var(--green);
-    padding: 50px;
-    position:relative;
-    border-radius: 20px;
     color: azure;
-    max-width: 1000px;
+    display: flex;
+    padding: 50px;
+    margin-left: auto ;
+    margin-right: auto;
+    border-radius: 20px;
+    max-width: 60%;
 }
-h1{
-    position:absolute;
-    bottom: 0px;
-    left:180px;
+
+.about-me-content h1{
+display: flex;
+justify-content: center;
 }
+
 .about-me img{
     border: solid;
     border-width: 10px;
     border-radius: 100%;
 }
-.about-me p{
-position: absolute;
-left: 520px;
-top:50px;
+
+.about-me-info{
+    padding: 20px;
 }
+
 /* section to contain project cards*/
 .portfolio{ 
     padding: 50px;
@@ -65,13 +73,15 @@ top:50px;
     margin: 10%;
     box-shadow: 13px 14px 5px 0px rgba(0,0,0,0.78);
     background-image:url();
+    display: flexbox;
 }
 .card a{
     color: azure;
     text-decoration: none;
-    background-color: blueviolet;
-    padding: 30px;
+    background-image:linear-gradient(to top,black,rgb(190, 30, 156));
+    padding: 50px;
     display: flex;
+    position:sticky;
     border-radius: 10px;
 }
 h2 {
@@ -79,9 +89,13 @@ h2 {
     border:solid;
     background-image: linear-gradient(to right,rgb(64, 209, 64),black);
     border-radius: 10px;
+    color: azure;
 }
-.card-body{
-    padding:30px;
+.card-body {
+    padding: 30px;
+}
+.card-body:first-of-type{
+    padding:50px;
 }
 /* unique styling for first child of cards class*/
 .card:first-child{
@@ -124,7 +138,11 @@ h2 {
         position:static;
         max-width: 160px;
     }
+    .about-me img{
+        max-height: 200px;
+        max-width: 200px;
   }
+}
   /* styling changes responsive to screens smaller than 576px*/
   @media screen and (max-width: 576px) {
     body {
