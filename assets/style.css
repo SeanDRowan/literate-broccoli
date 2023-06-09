@@ -111,4 +111,13 @@ top:50px;
     body {
       background-color: rgb(190, 30, 156);
     }
+    .about-me img{
+        max-height: 120px;
+        max-width: 120px;
+    
+    }
+    .about-me p{
+        position:static;
+        max-width: 160px;
+    }
   }
